@@ -1,4 +1,6 @@
-# Tools-Python遍历文件夹读取图像并转换保存
+# Tools-Python遍历文件夹读取图像并写为BGR保存
+
+- imread读进来就是bgr，但是如果直接用imwrite写则不能写成bgr格式，只能写成.jpeg, .png之类的格式，所以要对每个通道进行单独写为B、G、R的操作。
 
 ```python
 import os

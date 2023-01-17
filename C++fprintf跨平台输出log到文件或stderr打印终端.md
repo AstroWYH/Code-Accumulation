@@ -1,6 +1,7 @@
 # Tools-C++fprintf跨平台输出log到文件或stderr打印终端
 
 ```c
+// printf是打印输出到屏幕，fprintf是打印输出到文件。 
 #include<stdio.h>
 FILE *stream;
 

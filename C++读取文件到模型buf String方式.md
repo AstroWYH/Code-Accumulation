@@ -1,4 +1,4 @@
-# Tools-C++读取文件到模型buf String方式
+# Tools-C++读取文件到模型buf string方式
 
 ```c
 // 实现

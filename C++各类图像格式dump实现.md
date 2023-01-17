@@ -1,3 +1,6 @@
+- 对于mediapipe的ImageFrame、Mat、RGB buffer，都可以最终转换为Mat来dump。最终是通过cv::cvtColor转换为BGR Mat，然后通过imwrite写入。
+- 对于raw buffer，则采用文件的形式写入，比如yuv buffer（nv21/nv12）。
+
 ```cpp
 #include <opencv2/opencv.hpp>
 #include <opencv2/core/mat.hpp>

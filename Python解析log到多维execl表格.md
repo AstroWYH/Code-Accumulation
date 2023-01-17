@@ -60,7 +60,7 @@ def parse_file(tags, file_path, sheet):
     for i in dict_check.keys():
         if i[-6:] == "MEDIUM":
             for j in range(3):
-                print("?????????????:", dict_check[i])
+                print("dict_check:", dict_check[i])
                 dict_check[i[:-6] + "LOW"].append(dict_check[i][j])
             # dict_check[i[:-6] + "LOW"].append(dict_check[i])
         if i[-4:] == "HIGH":
