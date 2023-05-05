@@ -1,3 +1,5 @@
+### start end计时器
+
 ```cpp
 // 用steady_clock
 #include <chrono>
@@ -32,3 +34,18 @@ draw_frame_us = std::chrono::duration_cast<std::chrono::nanoseconds>(m_end - m_s
 // 返回纳秒，乘10的-3方，返回微秒
 ```
 
+### 倒计时
+
+```cpp
+#include <chrono>
+#include <iostream>
+const int kTimeOfCountDown = 5000; // 5000ms
+
+auto start = chrono::steady_clock::now();
+// process...
+
+chrono::milliseconds duration(kTimeOfCountDown); // 5000ms
+while (chrono::steady_clock::now() - start < duration) {
+}
+
+```
